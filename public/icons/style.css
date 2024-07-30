@@ -1,0 +1,97 @@
+@font-face {
+  font-family: 'alexbruno-dev';
+  src:
+    url('fonts/alexbruno-dev.ttf?3o9q4k') format('truetype'),
+    url('fonts/alexbruno-dev.woff?3o9q4k') format('woff'),
+    url('fonts/alexbruno-dev.svg?3o9q4k#alexbruno-dev') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'alexbruno-dev' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-threads:before {
+  content: "\e90b";
+}
+.icon-github:before {
+  content: "\e912";
+}
+.icon-instagram:before {
+  content: "\e913";
+  color: #e4405f;
+}
+.icon-linkedin:before {
+  content: "\e914";
+  color: #0077b5;
+}
+.icon-logo:before {
+  content: "\e907";
+}
+.icon-translate:before {
+  content: "\e90f";
+}
+.icon-x1:before {
+  content: "\e917";
+}
+.icon-printer:before {
+  content: "\e915";
+}
+.icon-help-circle:before {
+  content: "\e90e";
+}
+.icon-edit:before {
+  content: "\e903";
+}
+.icon-message-square:before {
+  content: "\e908";
+}
+.icon-share-2:before {
+  content: "\e909";
+}
+.icon-external-link:before {
+  content: "\e90a";
+}
+.icon-hash:before {
+  content: "\e910";
+}
+.icon-at-sign:before {
+  content: "\e911";
+}
+.icon-layers:before {
+  content: "\e90c";
+}
+.icon-rss:before {
+  content: "\e90d";
+}
+.icon-moon:before {
+  content: "\e900";
+}
+.icon-sun:before {
+  content: "\e901";
+}
+.icon-mail:before {
+  content: "\e902";
+}
+.icon-briefcase:before {
+  content: "\e904";
+}
+.icon-star:before {
+  content: "\e905";
+}
+.icon-user:before {
+  content: "\e906";
+}

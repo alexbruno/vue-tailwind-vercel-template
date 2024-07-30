@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::selection {
+  @apply text-slate-50 bg-teal-700;
+}
+
+html,
+body {
+  font-family: 'Noto Sans', sans-serif;
+  @apply min-h-screen flex flex-col scroll-smooth transition-all text-lg;
+}
+body {
+  @apply bg-slate-100 text-slate-950;
+  @apply dark:bg-slate-900 dark:text-slate-50;
+}
+#app {
+  @apply contents;
+}
+
+/* Fontes */
+.ff {
+  &-noto {
+    &-sans {
+      font-family: 'Noto Sans', sans-serif;
+
+      &-mono {
+        font-family: 'Noto Sans Mono', monospace;
+      }
+    }
+
+    &-serif {
+      font-family: 'Noto Serif', serif;
+    }
+  }
+}
+/* Fontes */
+
+/* Elementos nativos */
+.link {
+  @apply text-primary font-semibold relative inline-block;
+  @apply after:absolute after:bottom-0 after:left-0 after:right-0 after:h-px;
+
+  &:hover,
+  &.router-link-exact-active {
+    @apply after:bg-gradient-to-br after:from-emerald-500 after:to-sky-500 after:rounded-full;
+  }
+
+  &-modal {
+    @apply font-bold text-base;
+  }
+}
+/* Elementos nativos */
+
+/* Utilidades */
+.content {
+  @apply container mx-auto px-4 print:p-0;
+}
+/* Utilidades */
+
+/* Texto */
+.text {
+  &-theme {
+    @apply text-slate-950 dark:text-slate-50;
+  }
+
+  &-primary {
+    @apply text-transparent bg-clip-text bg-center;
+    @apply bg-gradient-to-br from-emerald-500 to-sky-500;
+  }
+}
+/* Texto */
+
+/* Backgrounds */
+.bg {
+  &-theme {
+    @apply bg-white dark:bg-slate-800 transition-colors;
+    @apply text-slate-950 dark:text-slate-50;
+  }
+
+  &-primary {
+    @apply bg-gradient-to-br from-emerald-500 to-sky-500 text-white;
+  }
+}
+/* Backgrounds */
+
+/* Componentes */
+.card {
+  @apply bg-theme px-5 py-4 rounded-xl shadow-md overflow-hidden;
+}
+/* Componentes */

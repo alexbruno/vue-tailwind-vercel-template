@@ -1,0 +1,14 @@
+pre-commit:
+  parallel: false
+  commands:
+    api:
+      tags: api
+      run: pnpm build:api
+    prettier:
+      tags: frontend style
+      glob: '*.{js,ts,json,css,pcss,html,md}'
+      run: pnpm prettier {staged_files}
+    eslint:
+      tags: frontend style
+      glob: '*.{js,ts}'
+      run: pnpm eslint {staged_files}

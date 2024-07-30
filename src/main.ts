@@ -11,7 +11,6 @@ app.use(router)
 app.mount('#app')
 
 // Prod env
-const prod = import.meta.env.MODE === 'production'
-if (prod) {
+if (import.meta.env.PROD) {
   // Code for production only
 }

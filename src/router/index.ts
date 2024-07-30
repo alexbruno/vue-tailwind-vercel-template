@@ -19,12 +19,14 @@ const router = createRouter({
   ],
 })
 
-router.beforeEach(() => {
-  AppStore.loading(true)
+router.beforeEach((to) => {
+  const index = to.path === '/'
+  if (!index) AppStore.loading(true)
 })
 
-router.afterEach(() => {
-  setTimeout(AppStore.loading, 500, false)
+router.afterEach((to) => {
+  const index = to.path === '/'
+  if (!index) setTimeout(AppStore.loading, 512, false)
 })
 
 export default router

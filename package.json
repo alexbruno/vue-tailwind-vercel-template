@@ -55,7 +55,6 @@
     "npm-run-all2": "latest",
     "postcss": "latest",
     "prettier": "latest",
-    "serverless-http": "latest",
     "tailwindcss": "latest",
     "typescript": "latest",
     "vercel": "latest",

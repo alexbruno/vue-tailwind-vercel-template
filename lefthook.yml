@@ -3,7 +3,7 @@ pre-commit:
   commands:
     api:
       tags: api
-      run: pnpm build:api
+      run: pnpm build:api && git add api
     prettier:
       tags: frontend style
       glob: '*.{js,ts,json,css,pcss,html,md}'

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../src/api/hello.ts"],
+  "sourcesContent": ["export async function GET(req: Request): Promise<Response> {\n  return Response.json({ hello: 'world', url: req.url })\n}\n"],
+  "mappings": ";AAAA,eAAsB,IAAI,KAAiC;AACzD,SAAO,SAAS,KAAK,EAAE,OAAO,SAAS,KAAK,IAAI,IAAI,CAAC;AACvD;",
+  "names": []
+}
